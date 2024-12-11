@@ -7,8 +7,32 @@ This is a web-based personal digital assistant application with multiple feature
 
 ### 1. Weather
 - Displays current weather information for Irvine, CA
+- Uses Open-Meteo API for weather data
 - Located at `weather.html`
-- Uses `weather.js` for fetching and displaying weather data
+- Features include:
+  - Real-time temperature
+  - Weather condition description
+  - Wind speed
+
+## API Integration
+
+### Open-Meteo Weather API
+- **Endpoint:** `https://api.open-meteo.com/v1/forecast`
+- **Location:** Irvine, CA (Latitude: 33.6846, Longitude: -117.8265)
+- **Data Fetched:**
+  - Current temperature
+  - Weather condition code
+  - Wind speed
+- **Weather Code Mapping:** Comprehensive description of 30+ weather conditions
+
+#### Weather Code Description Function
+The `getWeatherDescription()` function provides human-readable descriptions for various weather codes, including:
+- Clear sky
+- Partly cloudy
+- Rain variations
+- Snow conditions
+- Thunderstorms
+- Fog types
 
 ### 2. Timer
 - Allows users to set a countdown timer
@@ -16,7 +40,7 @@ This is a web-based personal digital assistant application with multiple feature
 - Features include:
   - Setting timer duration in seconds
   - Real-time countdown display
-  - Alert when timer completes
+  - Alert when the timer completes
 
 ### 3. Alarm
 - Enables users to set timed alarms
