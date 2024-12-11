@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>Timer - Personalized Digital Assistant</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Timer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="timer.html">Timer</a></li>
+                <li><a href="alarm.html">Alarm</a></li>
+                <li><a href="event.html">Event Reminders</a></li>
+                <li><a href="todo.html">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="timer-section">
+            <h2>Set a Timer</h2>
+            <div id="timer-form">
+                <input type="number" id="timer-duration" placeholder="Enter duration in seconds" min="1">
+                <button id="start-timer-btn">Start Timer</button>
+                <p id="timer-feedback"></p>
+                <p id="timer-countdown"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="js/timer.js"></script>
+</body>
+</html>

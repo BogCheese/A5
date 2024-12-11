@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>To-Do List - Personalized Digital Assistant</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="timer.html">Timer</a></li>
+                <li><a href="alarm.html">Alarm</a></li>
+                <li><a href="event.html">Event Reminders</a></li>
+                <li><a href="todo.html">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="todo-section">
+            <h2>To-Do List</h2>
+            <div id="todo-form">
+                <input type="text" id="todo-task" placeholder="Task Name">
+                <input type="date" id="todo-due-date" placeholder="Due Date (optional)">
+                <select id="todo-priority">
+                    <option value="">Priority (optional)</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <button id="add-todo-btn">Add Task</button>
+                <p id="todo-feedback"></p>
+            </div>
+            <table id="todo-table">
+                <thead>
+                    <tr>
+                        <th>Task Name</th>
+                        <th>Due Date</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="todo-table-body">
+                    <!-- tasks added here once submitted byt user  -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="js/todo.js"></script>
+</body>
+</html>

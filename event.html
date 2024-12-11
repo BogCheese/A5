@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>Event Reminders - Personalized Digital Assistant</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Event Reminders</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="timer.html">Timer</a></li>
+                <li><a href="alarm.html">Alarm</a></li>
+                <li><a href="event.html">Event Reminders</a></li>
+                <li><a href="todo.html">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="event-section">
+            <h2>Event Reminders</h2>
+            <div id="event-form">
+                <input type="text" id="event-name" placeholder="Event Name">
+                <input type="datetime-local" id="event-datetime">
+                <input type="datetime-local" id="reminder-datetime" placeholder="Reminder Time (optional)">
+                <button id="add-event-btn">Add Event</button>
+                <p id="event-feedback"></p>
+            </div>
+            <table id="event-table">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Event Date/Time</th>
+                        <th>Reminder Time</th>
+                    </tr>
+                </thead>
+                <tbody id="event-table-body">
+                    <!-- Events will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="js/event.js"></script>
+</body>
+</html>
